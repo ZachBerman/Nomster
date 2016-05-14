@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Pagination
+gem 'will_paginate', '~> 3.1.0'
+
 #bootstrap
 gem 'bootstrap-sass', '~> 3.3.5.1'
 
