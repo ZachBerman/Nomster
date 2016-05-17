@@ -1,4 +1,4 @@
 Geocoder.configure(
   :lookup => :bing,
-  :api_key => ENV['AhrL4dezghAJ__n4wI4_bwjv3VaGKvcejAhE2lMEaVvyvlRubwBgworKyaQSILD6'],
+  :api_key => ENV['GEOCODER_API_KEY'],
   )
