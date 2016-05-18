@@ -1,7 +1,7 @@
 class CreatePhotos < ActiveRecord::Migration
   def change
     create_table :photos do |t|
-add_column :photos
+      add_column :photos
       t.timestamps
     end
 
