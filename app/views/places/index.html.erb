@@ -8,6 +8,13 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
+    <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     <div class="item active">
       <%= image_tag 'scenic.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
@@ -29,15 +36,7 @@
   </div>
 </div>
 
-  <!-- Controls -->
-  <div class="controls">
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-  </div>
+
 
 <br />
 <% @places.each do |place| %>
