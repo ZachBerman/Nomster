@@ -5,4 +5,5 @@ class PhotosController < ApplicationController
   @comment = Comment.new
   @photo = Photo.new
 end
+end
 
