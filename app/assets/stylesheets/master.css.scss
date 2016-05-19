@@ -27,6 +27,7 @@ body {
   border-radius: 0;
   box-shadow: 0px 1px 15px #2a2a2a;
   margin-bottom: 0;
+  z-index: 1;
 }
 
 .navbar-inverse .navbar-brand {
@@ -68,20 +69,27 @@ blockquote p {
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  max-height: 550px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  line-height: 1;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: 550px;
   width: 100%;
 }
 
 .carousel-caption {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-  font-size: 40px;
-  text-shadow: rgba(0,0,0,0.95) 2px 2px;
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  position: absolute;
-  left: 0;
-  }
+ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+ font-size: 40px;
+ text-shadow: rgba(0,0,0,0.95) 2px 2px;
+ background-color: rgba(0,0,0,0.5);
+ width: 100%;
+ position: absolute;
+ left: 0;
+ }
 
-.carousel {
-  box-shadow: 0px 3px 8px #2a2a2a;
-  }
+ .carousel {
+ box-shadow: 0px 3px 8px #2a2a2a;
+ }

@@ -87,6 +87,13 @@ function initMap() {
 
 <div class="clear"></div>
 
+<%= simple_form_for @photo, url: 'place_photos_path' do |f| %>
+  <%= f.input :Picture %>
+  <%= f.submit "Add a Picture", class: 'btn btn-primary' %>
+<% end %>
+
+<div class="clear"></div>
+
 <h1>Comments</h1>
 
 <% @place.comments.each do |comment| %>

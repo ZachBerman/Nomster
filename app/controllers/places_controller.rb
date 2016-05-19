@@ -20,6 +20,7 @@ class PlacesController < ApplicationController
 
   def show
     @comment = Comment.new
+    @photo = Photo.new
     @place = Place.find(params[:id])
   end
 
