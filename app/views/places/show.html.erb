@@ -40,11 +40,15 @@ function initMap() {
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 
   <div id="map"></div>
+
   <h1>Photos</h1>
+
     <% @place.photos.each do |photo| %>
-    <%= image_tag photo.Picture %>
-    <%= photo.caption %>
-  <% end %>
+      <a href = "#">
+    <%= image_tag photo.Picture, :class => "img-thumbnail" %>
+    </a>
+  <% end %> 
+
 <% end %>
 
 <br />
@@ -70,6 +74,7 @@ function initMap() {
       <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
       <div class="modal-body">
           <%= f.input :Picture %>
+          <%= f.input :caption %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -177,6 +182,7 @@ function initMap() {
     </blockquote>
   </div>
 <% end %>
+
 <div class="clear"></div>
 
 
