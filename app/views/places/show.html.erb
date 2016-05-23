@@ -40,9 +40,9 @@ function initMap() {
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 
   <div id="map"></div>
-
+<br />
   <h1>Photos</h1>
-
+<br />
     <% @place.photos.each do |photo| %>
       <a href = "#">
     <%= image_tag photo.Picture, :class => "img-thumbnail" %>

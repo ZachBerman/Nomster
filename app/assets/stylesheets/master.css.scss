@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Acme);
 
+* {
+  font-family: 'Acme', sans-serif;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -81,7 +85,7 @@ blockquote p {
 }
 
 .carousel-caption {
- font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+ font-family: 'Acme', sans-serif;
  font-size: 40px;
  text-shadow: rgba(0,0,0,0.95) 2px 2px;
  background-color: rgba(0,0,0,0.5);
