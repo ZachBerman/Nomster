@@ -64,7 +64,7 @@ function initMap() {
 <div class="clear"></div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myPictureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -74,7 +74,6 @@ function initMap() {
       <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
       <div class="modal-body">
           <%= f.input :Picture %>
-          <%= f.input :caption %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
